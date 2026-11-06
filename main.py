@@ -1,4 +1,4 @@
-from functions import add
+from functions import add, sub
 
 
 def main():
@@ -11,6 +11,8 @@ def main():
 
     if operator == "+":
         result = add(number1, number2)
+    elif operator == "-":
+        result = sub(number1, number2)
 
     print(f"Result: {result}")
 
