@@ -5,3 +5,7 @@ def add(num1: float, num2: float) -> float:
 def sub(num1: float, num2: float) -> float:
     return num1 - num2
 
+
+def multiply(num1: float, num2: float) -> float:
+    return num1 * num2
+
