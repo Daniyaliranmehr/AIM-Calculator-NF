@@ -9,3 +9,7 @@ def sub(num1: float, num2: float) -> float:
 def multiply(num1: float, num2: float) -> float:
     return num1 * num2
 
+
+def division(num1: float, num2: float) -> float:
+    return num1 / num2
+
