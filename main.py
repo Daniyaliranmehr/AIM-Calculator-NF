@@ -1,4 +1,4 @@
-from functions import add, sub
+from functions import add, sub, multiply
 
 
 def main():
@@ -13,7 +13,9 @@ def main():
         result = add(number1, number2)
     elif operator == "-":
         result = sub(number1, number2)
-
+    elif operator == "*":
+        result = multiply(number1, number2)
+   
     print(f"Result: {result}")
 
 
