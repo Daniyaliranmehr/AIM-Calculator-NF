@@ -1,4 +1,4 @@
-from functions import add, sub, multiply
+from functions import add, sub, multiply, division
 
 
 def main():
@@ -15,6 +15,9 @@ def main():
         result = sub(number1, number2)
     elif operator == "*":
         result = multiply(number1, number2)
+    elif operator == "/":
+        result = division(number1, number2)
+
    
     print(f"Result: {result}")
 
