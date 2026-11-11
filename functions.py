@@ -29,3 +29,7 @@ def maximum(num1: float, num2: float) -> float:
 def minimum(num1: float, num2: float) -> float:
    return min(num1, num2)
 
+
+def average(num1: float, num2: float) -> float:
+    return (num1 + num2) / 2
+
