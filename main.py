@@ -1,4 +1,4 @@
-from functions import add, sub, multiply, division, power, mod, maximum, minimum
+from functions import add, sub, multiply, division, power, mod, maximum, minimum, average
 
 
 def main():
@@ -25,6 +25,8 @@ def main():
         result = maximum(number1, number2)
     elif operator == "min":
         result = minimum(number1, number2)    
+    elif operator == "avg":
+        result = average(number1, number2)
    
     print(f"Result: {result}")
 
