@@ -21,3 +21,7 @@ def power(num1: float, num2: float) -> float:
 def mod(num1: float, num2: float) -> float:
     return num1 % num2
 
+
+def maximum(num1: float, num2: float) -> float:
+   return max(num1, num2)
+
