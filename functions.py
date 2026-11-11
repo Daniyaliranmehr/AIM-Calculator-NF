@@ -25,3 +25,7 @@ def mod(num1: float, num2: float) -> float:
 def maximum(num1: float, num2: float) -> float:
    return max(num1, num2)
 
+
+def minimum(num1: float, num2: float) -> float:
+   return min(num1, num2)
+
