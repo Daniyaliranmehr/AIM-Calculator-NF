@@ -1,4 +1,4 @@
-from functions import add, sub, multiply, division, power, mod, maximum
+from functions import add, sub, multiply, division, power, mod, maximum, minimum
 
 
 def main():
@@ -23,6 +23,8 @@ def main():
         result = mod(number1, number2)
     elif operator == "max":
         result = maximum(number1, number2)
+    elif operator == "min":
+        result = minimum(number1, number2)    
    
     print(f"Result: {result}")
 
