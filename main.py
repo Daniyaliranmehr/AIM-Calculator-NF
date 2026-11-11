@@ -1,4 +1,4 @@
-from functions import add, sub, multiply, division, power, mod
+from functions import add, sub, multiply, division, power, mod, maximum
 
 
 def main():
@@ -21,6 +21,8 @@ def main():
         result = power(number1, number2)
     elif operator == "%":
         result = mod(number1, number2)
+    elif operator == "max":
+        result = maximum(number1, number2)
    
     print(f"Result: {result}")
 
