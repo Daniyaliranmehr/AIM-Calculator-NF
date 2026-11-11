@@ -1,4 +1,4 @@
-from functions import add, sub, multiply, division, power
+from functions import add, sub, multiply, division, power, mod
 
 
 def main():
@@ -19,6 +19,8 @@ def main():
         result = division(number1, number2)
     elif operator == "**":
         result = power(number1, number2)
+    elif operator == "%":
+        result = mod(number1, number2)
    
     print(f"Result: {result}")
 
