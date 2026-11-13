@@ -71,7 +71,12 @@ def division(num1: float, num2: float) -> float:
     float
         The result of the division.
     """
-    return num1 / num2
+    try:
+        result = num1 / num2
+    except ZeroDivisionError:
+        return "Division by zero is not suppotred! Please enter another denominator."
+    else:
+        return result
 
 
 def power(num1: float, num2: float) -> float:
