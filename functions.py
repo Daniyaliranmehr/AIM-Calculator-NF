@@ -72,7 +72,7 @@ def division(num1: float, num2: float) -> float:
         The result of the division.
     """
     try:
-        result = num1 / num2
+        result = round(num1 / num2, 2)
     except ZeroDivisionError:
         return "Division by zero is not suppotred! Please enter another denominator."
     else:
