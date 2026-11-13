@@ -1,4 +1,12 @@
-from functions import add, sub, multiply, division, power, mod, maximum, minimum, average
+from functions import (add, 
+                       sub, 
+                       multiply, 
+                       division, 
+                       power, 
+                       mod, 
+                       maximum, 
+                       minimum, 
+                       average)
 
 
 def main():
