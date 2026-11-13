@@ -128,10 +128,10 @@ def maximum(num1: float, num2: float) -> float:
     float
         The larger number.
     """
-   if num1 > num2:
-       return num1
-   else:
-       return num2
+    if num1 > num2:
+        return num1
+    else:
+        return num2
 
 
 def minimum(num1: float, num2: float) -> float:
