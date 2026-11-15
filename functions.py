@@ -139,26 +139,25 @@ def maximum(num1: float, num2: float) -> float:
         return num2
 
 
-def minimum(num1: float, num2: float) -> float:
+def minimum(numbers: list[float]) -> float:
     """
-    Find the smaller of two numbers.
+    Find the smallest number in a list of numbers.
 
     Parameters
     ----------
-    num1 : float
-        The first number.
-    num2 : float
-        The second number.
+    numbers : list[float]
+        A list of numbers to compare.
 
     Returns
     -------
     float
-        The smaller number.
+        The smallest number in the list.
     """
-    if num1 < num2:
-       return num1
-    else:
-        return num2
+    min_num = numbers[0]
+    for number in numbers:
+        if number < min_num:
+            min_num = number
+    return min_num
 
 
 def average(num1: float, num2: float) -> float:
