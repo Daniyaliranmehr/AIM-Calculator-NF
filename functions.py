@@ -117,26 +117,25 @@ def mod(num1: float, num2: float) -> float:
     return num1 % num2
 
 
-def maximum(num1: float, num2: float) -> float:
+def maximum(numbers: list[float]) -> float:
     """
-    Find the larger of two numbers.
+    Find the largest number in a list of numbers.
 
     Parameters
     ----------
-    num1 : float
-        The first number.
-    num2 : float
-        The second number.
+    numbers : list[float]
+        A list of numbers to compare.
 
     Returns
     -------
     float
-        The larger number.
+        The largest number in the list.
     """
-    if num1 > num2:
-        return num1
-    else:
-        return num2
+    max_num = numbers[0]
+    for number in numbers:
+        if number > max_num:
+            max_num = number
+    return max_num
 
 
 def minimum(numbers: list[float]) -> float:
