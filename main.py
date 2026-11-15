@@ -18,6 +18,8 @@ def main():
         numbers = list(map(float, items[1:]))
         if items[0] == "min":
             result = minimum(numbers)
+        elif items[0] == "max":
+            result = maximum(numbers)
 
 
     else:
