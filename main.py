@@ -13,28 +13,31 @@ def main():
     expression = input("Expression: ")
     items = expression.split()
 
-    operator = items[1]
-    number1 = float(items[0])
-    number2 = float(items[-1])
 
-    if operator == "+":
-        result = add(number1, number2)
-    elif operator == "-":
-        result = sub(number1, number2)
-    elif operator == "*":
-        result = multiply(number1, number2)
-    elif operator == "/":
-        result = division(number1, number2)
-    elif operator == "**":
-        result = power(number1, number2)
-    elif operator == "%":
-        result = mod(number1, number2)
-    elif operator == "max":
-        result = maximum(number1, number2)
-    elif operator == "min":
-        result = minimum(number1, number2)    
-    elif operator == "avg":
-        result = average(number1, number2)
+    if items[0] in ("min", "max", "avg"):
+        numbers = list(map(float, items[1:]))
+        if items[0] == "min":
+            result = minimum(numbers)
+
+
+    else:
+        operator = items[1]
+        number1 = float(items[0])
+        number2 = float(items[-1])
+        
+        if operator == "+":
+            result = add(number1, number2)
+        elif operator == "-":
+            result = sub(number1, number2)
+        elif operator == "*":
+            result = multiply(number1, number2)
+        elif operator == "/":
+            result = division(number1, number2)
+        elif operator == "**":
+            result = power(number1, number2)
+        elif operator == "%":
+            result = mod(number1, number2)
+    
    
     print(f"Result: {result}")
 
