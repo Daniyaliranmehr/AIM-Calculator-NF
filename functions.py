@@ -159,21 +159,19 @@ def minimum(numbers: list[float]) -> float:
     return min_num
 
 
-def average(num1: float, num2: float) -> float:
+def average(numbers: list[float]) -> float:
     """
-    Calculate the average of two numbers.
+    Calculate the average of a list of numbers.
 
     Parameters
     ----------
-    num1 : float
-        The first number.
-    num2 : float
-        The second number.
+    numbers : list[float]
+        A list of numbers.
 
     Returns
     -------
     float
-        The average of the two numbers.
+        The average of the numbers.
     """
-    return (num1 + num2) / 2
+    return sum(numbers) / len(numbers)
 
