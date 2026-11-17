@@ -18,8 +18,12 @@ def main():
         numbers = list(map(float, items[1:]))
         if items[0] == "min":
             result = minimum(numbers)
+
         elif items[0] == "max":
             result = maximum(numbers)
+
+        elif items[0] == "avg":
+            result = average(numbers)
 
 
     else:
